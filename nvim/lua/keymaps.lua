@@ -35,3 +35,13 @@ vim.keymap.set('n', '<Esc>', function()
   vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes('<Esc>', true, false, true), 'n', false)
 end, { desc = 'Clear search highlight with Esc' })
 
+vim.keymap.set('n', '<leader>t', function()
+  vim.cmd('vsplit | terminal')
+end, { desc = 'Open terminal' })
+
+vim.keymap.set('t', '<Esc>', '<C-\\><C-n>', { desc = 'Close terminal mode' })
+
+vim.keymap.set('n', '<leader>x', ':bd!<CR>', { desc = 'Close terminal' })
+
+
+
