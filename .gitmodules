@@ -1,0 +1,12 @@
+[submodule "nvim/pack/nvim/start/nvim-lspconfig"]
+	path = nvim/pack/nvim/start/nvim-lspconfig
+	url = https://github.com/neovim/nvim-lspconfig.git
+[submodule "nvim/pack/nvim/start/omnisharp-extended-lsp.nvim"]
+	path = nvim/pack/nvim/start/omnisharp-extended-lsp.nvim
+	url = https://github.com/Hoffs/omnisharp-extended-lsp.nvim.git
+[submodule "nvim/pack/nvim/start/tokyonight.nvim"]
+	path = nvim/pack/nvim/start/tokyonight.nvim
+	url = https://github.com/folke/tokyonight.nvim.git
+[submodule "nvim/pack/nvim/start/kanagawa.nvim"]
+	path = nvim/pack/nvim/start/kanagawa.nvim
+	url = https://github.com/rebelot/kanagawa.nvim.git
