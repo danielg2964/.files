@@ -10,3 +10,6 @@
 [submodule "nvim/pack/nvim/start/kanagawa.nvim"]
 	path = nvim/pack/nvim/start/kanagawa.nvim
 	url = https://github.com/rebelot/kanagawa.nvim.git
+[submodule "nvim/pack/nvim/start/roslyn.nvim"]
+	path = nvim/pack/nvim/start/roslyn.nvim
+	url = https://github.com/seblyng/roslyn.nvim.git
