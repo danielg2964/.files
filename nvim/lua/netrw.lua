@@ -1,4 +1,5 @@
-vim.g.netrw_liststyle = 3
+vim.g.netrw_liststyle = 1
+vim.g.netrw_sort_by = 'extension'
 
 vim.api.nvim_create_autocmd('FileType', {
   pattern = 'netrw',
