@@ -13,3 +13,6 @@
 [submodule "nvim/pack/nvim/start/roslyn.nvim"]
 	path = nvim/pack/nvim/start/roslyn.nvim
 	url = https://github.com/seblyng/roslyn.nvim.git
+[submodule "nvim/pack/nvim/start/vim-moonfly-colors"]
+	path = nvim/pack/nvim/start/vim-moonfly-colors
+	url = https://github.com/bluz71/vim-moonfly-colors.git
