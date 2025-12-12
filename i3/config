@@ -6,6 +6,9 @@
 #
 
 include monitors.conf
+include layout.conf
+
+for_window [class="Sutter"] floating enable
 
 # i3 config file (v4)
 #
