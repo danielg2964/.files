@@ -13,3 +13,9 @@ set -x PATH /opt/node/bin $PATH
 # Dotnet
 set -x DOTNET_ROOT /opt/dotnet
 set -x PATH "$HOME/.dotnet/tools" $PATH
+
+# Go
+set -x PATH "$HOME/go/bin" $PATH
+
+# Rust
+source "$HOME/.cargo/env.fish"
