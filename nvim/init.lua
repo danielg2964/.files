@@ -1,4 +1,4 @@
-require "config"
-require "keymaps"
-require "color"
-require "lsp"
+require 'config'
+require 'keymaps'
+require 'color'
+require 'lsp'
