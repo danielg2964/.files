@@ -13,7 +13,6 @@ vim.pack.add{{
     name = 'plenary.nvim' 
 }}
 
--- vtsls
 vim.lsp.enable('vtsls')
 
 require('easy-dotnet').setup({
@@ -24,5 +23,6 @@ require('easy-dotnet').setup({
   },
 })
 
--- gopls
 vim.lsp.enable('gopls')
+
+vim.lsp.enable('zls')
