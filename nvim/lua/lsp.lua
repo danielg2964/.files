@@ -13,6 +13,11 @@ vim.pack.add{{
     name = 'plenary.nvim' 
 }}
 
+vim.pack.add{{
+    src = 'https://github.com/mfussenegger/nvim-jdtls.git',
+    name = 'nvim-jdtls' 
+}}
+
 vim.lsp.enable('vtsls')
 
 require('easy-dotnet').setup({
@@ -26,3 +31,5 @@ require('easy-dotnet').setup({
 vim.lsp.enable('gopls')
 
 vim.lsp.enable('zls')
+
+vim.lsp.enable('jdtls')

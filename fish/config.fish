@@ -19,3 +19,8 @@ set -x PATH "$HOME/go/bin" $PATH
 
 # Rust
 source "$HOME/.cargo/env.fish"
+
+# Java
+set --export JAVA_HOME (dirname (dirname (readlink -f (which java))))
+set -gx PATH $JAVA_HOME $PATH
+
