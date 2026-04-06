@@ -25,3 +25,5 @@ fi
 JAVA_BIN=$(readlink -f "$(which java)")
 export JAVA_HOME=$(dirname "$(dirname "$JAVA_BIN")")
 export PATH="$JAVA_HOME:$PATH"
+
+export XDG_RUNTIME_DIR=~/.sway
