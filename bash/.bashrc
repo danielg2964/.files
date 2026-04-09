@@ -17,6 +17,7 @@ export PATH="$HOME/.dotnet/tools:$PATH"
 
 # Go
 export PATH="$HOME/go/bin:$PATH"
+export GOROOT="/opt/go"
 
 # Rust
 if [ -f "$HOME/.cargo/env" ]; then
