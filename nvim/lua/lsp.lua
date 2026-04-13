@@ -20,13 +20,7 @@ vim.pack.add{{
 
 vim.lsp.enable('vtsls')
 
-require('easy-dotnet').setup({
-  auto_bootstrap_namespace = {
-    --block_scoped, file_scoped
-    type = "block_scoped",
-    enabled = true,
-  },
-})
+require('easy-dotnet').setup()
 
 vim.lsp.enable('gopls')
 
