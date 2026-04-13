@@ -16,16 +16,20 @@ include /etc/sway/config-vars.d/*
 ### Output configuration
 output * bg ~/background.jpg fill
 
-workspace 1 output eDP-1
+workspace 1 output HDMI-A-1
+output HDMI-A-1 {
+    resolution 1920x1080 
+    position 1920,0
+}
+
+workspace 0 output eDP-1
 output eDP-1 {
     resolution 1920x1080 
     position 0,0
 }
 
-output HDMI-A-1 {
-    resolution 1920x1080 
-    position 1920,0
-}
+# Gammastep
+exec gammastep
 
 ### Idle configuration
 
@@ -198,6 +202,7 @@ bindsym $mod+r mode "resize"
     bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
     bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
     # Special key to take a screenshot with grim
+    bindsym $mod+Shift+s exec grim -g "$(slurp)" - | wl-copy
     bindsym Print exec grim
 
 #
