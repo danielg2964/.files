@@ -18,6 +18,11 @@ vim.pack.add{{
     name = 'nvim-jdtls' 
 }}
 
+vim.pack.add{{
+    src = 'https://github.com/ionide/Ionide-vim',
+    name = 'ionide-vim' 
+}}
+
 vim.lsp.enable('vtsls')
 
 require('easy-dotnet').setup()

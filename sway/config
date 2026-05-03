@@ -22,7 +22,7 @@ output HDMI-A-1 {
     position 1920,0
 }
 
-workspace 0 output eDP-1
+workspace 10 output eDP-1
 output eDP-1 {
     resolution 1920x1080 
     position 0,0
