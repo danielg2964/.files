@@ -16,16 +16,17 @@ include /etc/sway/config-vars.d/*
 ### Output configuration
 output * bg ~/background.jpg fill
 
-workspace 1 output HDMI-A-1
-output HDMI-A-1 {
-    resolution 1920x1080 
-    position 1920,0
-}
-
-workspace 10 output eDP-1
+workspace 1 output eDP-1
 output eDP-1 {
     resolution 1920x1080 
-    position 0,0
+    position 0,90
+    scale 1.2
+}
+
+workspace 10 output HDMI-A-1
+output HDMI-A-1 {
+    resolution 1920x1080 
+    position 1600,0
 }
 
 # Gammastep
@@ -45,6 +46,11 @@ input type:mouse {
     tap enabled
     middle_emulation enabled
     accel_profile flat
+}
+
+input type:pointer {
+  accel_profile flat
+  pointer_accel 0
 }
 
 input type:keyboard {

@@ -23,12 +23,25 @@ vim.pack.add{{
     name = 'ionide-vim' 
 }}
 
+vim.lsp.config('rust_analyzer', {
+  settings = {
+    ['rust-analyzer'] = {
+      diagnostics = {
+        enable = true;
+      }
+    }
+  }
+})
+
 vim.lsp.enable('vtsls')
 
-require('easy-dotnet').setup()
+local dotnet = require("easy-dotnet")
+dotnet.setup()
 
 vim.lsp.enable('gopls')
 
 vim.lsp.enable('zls')
 
 vim.lsp.enable('jdtls')
+
+vim.lsp.enable('rust_analyzer')
