@@ -9,6 +9,11 @@ vim.pack.add{{
 }}
 
 vim.pack.add{{
+    src = 'https://github.com/pmizio/typescript-tools.nvim',
+    name = 'typescript-tools.nvim'
+}}
+
+vim.pack.add{{
     src = 'https://github.com/nvim-lua/plenary.nvim',
     name = 'plenary.nvim' 
 }}
@@ -33,10 +38,10 @@ vim.lsp.config('rust_analyzer', {
   }
 })
 
-vim.lsp.enable('vtsls')
-
 local dotnet = require("easy-dotnet")
 dotnet.setup()
+
+vim.lsp.enable('tsgo')
 
 vim.lsp.enable('gopls')
 
